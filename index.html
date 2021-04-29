@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FakeFlix</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container header">
+      <nav class="navbar">
+        <a class="navbar-brand" href="">
+          <img src="./images/logo.svg" width="120px" alt="" />
+        </a>
+        <div class="row">
+          <div class="col-12 nav-links">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#releases">lançamentos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#destaque">em destaque</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">avaliações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#interviews">entrevista & making-of</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#news">novidades</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="form-inline">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+            <span class="material-icons">search</span>
+          </button>
+        </form>
+      </nav>
+    </header>
+
+    <main class="container main">
+      <section class="row releases" id="releases">
+        <div class="col-12">
+          <h1 class="releases-title">Lançamentos</h1>
+        </div>
+        <section class="row banner">
+          <div class="col-12 carousel">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide carousel"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-6  video">
+                      <div class="videoWrapper">
+                        <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/Yh-XpUlDjJk"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow=" clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                      </div>
+                    </div>
+  
+                    <div class="col-sm-12 col-lg-6 infos">
+                      <h2>Raya e o Último Dragão</h2>
+                      <p class="sinopse">
+                        <b>Sinopse:</b> Há muito tempo, no mundo de fantasia de
+                        Kumandra, humanos e dragões viviam juntos em harmonia. Mas
+                        quando uma força maligna ameaçou a terra, os dragões se
+                        sacrificaram para salvar a humanidade. Agora, 500 anos
+                        depois, o mesmo mal voltou e cabe a uma guerreira
+                        solitária, Raya, rastrear o lendário último dragão para
+                        restaurar a terra despedaçada e seu povo dividido.
+                      </p>
+                      <div class="film-info">
+                        <p>
+                          <b>Direção:</b> <a href="https://pt.wikipedia.org/wiki/Don_Hall" target="_blank">Don Hall</a>,
+                          <a href="https://pt.wikipedia.org/wiki/Carlos_L%C3%B3pez_Estrada" target="_blank">Carlos Lopez Estrada</a>
+                        </p>
+                        <p>
+                          <b>Roteiro:</b>
+                          <a href="https://en.wikipedia.org/wiki/Adele_Lim" target="_blank">Adele Lim</a>,
+                          <a href="https://pt.wikipedia.org/wiki/Qui_Nguyen" target="_blank"> Qui Nguyen</a>
+                        </p>
+                        <p><b>Estreia:</b> 2021</p>
+                      </div>
+                      <div class="actors">
+                        <p><b>Elenco:</b></p>
+                        <div class="film-info">
+                          <p><a href="https://pt.wikipedia.org/wiki/Awkwafina" target="_blank">Awkwafina</a></p>
+                          <p>
+                            <a href="https://pt.wikipedia.org/wiki/Kelly_Marie_Tran" target="_blank">
+                              Kelly Marie Tran
+                            </a>
+                          </p>
+                          <p>
+                            <a href="https://pt.wikipedia.org/wiki/Gemma_Chan" target="_blank">Gemma Chan</a>
+                          </p>
+                          <p>
+                            <a href="https://pt.wikipedia.org/wiki/Alan_Tudyk" target="_blank">Alan Tudyk</a>
+                          </p>
+                        </div>
+                      </div>
+  
+                      <div class="review">
+                        <p><b>Avaliação:</b></p>
+                        <div class="film-info">
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star_outline </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-6 video">
+                      <div class="videoWrapper">
+                        <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/odM92ap8_c0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow=" clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                      </div>
+                    </div>
+  
+                    <div class="col-sm-12 col-lg-6 infos">
+                      <h2>Godzilla vs Kong</h2>
+                      <p class="sinopse">
+                        <b>Sinopse:</b> As lendas se enfrentam em "Godzilla vs. Kong", quando esses adversários míticos se encontram em uma espetacular batalha, na qual o destino do mundo entrará em jogo. Kong e seus protetores embarcam em uma jornada perigosa para encontrar seu verdadeiro lar. Com eles está Jia, uma jovem órfã que tem uma ligação única e forte com Kong. Mas eles não sabiam que estavam no caminho de um Godzilla enfurecido, que está deixando um rastro de destruição pelo planeta.
+                      </p>
+                      <div class="film-info">
+                        <p>
+                          <b>Direção:</b> 
+                          <a href="https://en.wikipedia.org/wiki/Adam_Wingard" target="_blank">Adam Wingard</a>
+                        </p>
+                        <p>
+                          <b>Roteiro:</b> 
+                          <a href="https://en.wikipedia.org/wiki/Max_Borenstein" target="_blank">Max Borenstein</a>,
+                          <a href="https://en.wikipedia.org/wiki/Eric_Pearson" target="_blank">Eric Pearson</a>
+                        </p>
+                        <p><b>Estreia:</b> 2021</p>
+                      </div>
+                      <div class="actors">
+                        <p><b>Elenco:</b></p>
+                        <div class="film-info">
+                          <p><a href="https://pt.wikipedia.org/wiki/Millie_Bobby_Brown" target="_blank">Millie Bobby Brown</a></p>
+                          <p>
+                            <a href="https://pt.wikipedia.org/wiki/Alexander_Skarsg%C3%A5rd" target="_blank">Alexander Skarsgård</a>
+                          </p>
+                          <p>
+                            <a href="https://pt.wikipedia.org/wiki/Rebecca_Hall" target="_blank">Rebecca Hall</a>
+                          </p>
+                          <p>
+                            <a href="https://pt.wikipedia.org/wiki/Eiza_Gonz%C3%A1lez" target="_blank">Eiza González</a>
+                          </p>
+                        </div>
+                      </div>
+  
+                      <div class="review">
+                        <p><b>Avaliação:</b></p>
+                        <div class="film-info">
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star_outline </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-6 video">
+                      <div class="videoWrapper">
+                        <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/6pKvuKQ2pIg"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow=" clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                      </div>
+                    </div>
+  
+                    <div class="col-sm-12 col-lg-6 infos">
+                      <h2>O Auto da Boa Mentira</h2>
+                      <p class="sinopse">
+                        <b>Sinopse:</b> Dizem que mentira tem perna curta. Se isso é verdade, a bichinha corre rápido, viu! Em quatro histórias inspiradas em contos bem humorados de Ariano Suassuna, cada uma criada a partir de frases do poeta paraibano, conhecemos Helder, Fabiano, Pierce e Lorena, vivendo diferentes situações onde, ironicamente, a mentira é sempre a protagonista.
+                      </p>
+                      <div class="film-info">
+                        <p>
+                          <b>Direção:</b> <a href="https://pt.wikipedia.org/wiki/Jos%C3%A9_Eduardo_Belmonte" target="_blank">José Eduardo Belmonte</a>,
+                        </p>
+                        <p>
+                          <b>Roteiro:</b> <a href="">Tatiana Maciel</a>,
+                          <a href="">Célio Porto</a>
+                        </p>
+                        <p><b>Estreia:</b> 2021</p>
+                      </div>
+                      <div class="actors">
+                        <p><b>Elenco:</b></p>
+                        <div class="film-info">
+                          <p>
+                            <a href="https://pt.wikipedia.org/wiki/Leandro_Hassum" target="_blank">Leandro Hassum</a>
+                          </p>
+                          <p>
+                            <a href="https://pt.wikipedia.org/wiki/Nanda_Costa" target="_blank">Nanda Costa</a>
+                          </p>
+                          <p>
+                            <a href="https://pt.wikipedia.org/wiki/Rocco_Pitanga" target="_blank">
+                              Rocco Pitanga
+                            </a>
+                          </p>
+                          <p>
+                            <a href="https://pt.wikipedia.org/wiki/Jesu%C3%ADta_Barbosa" target="_blank">
+                              Jesuíta Barbosa
+                            </a>
+                          </p>
+                        </div>
+                      </div>
+  
+                      <div class="review">
+                        <p><b>Avaliação:</b></p>
+                        <div class="film-info">
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star_half </span>
+                          <span class="material-icons"> star_outline </span>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="row destaque" id="destaque">
+        <div class="col-12">
+          <h1 class="title">
+            Em Destaque
+          </h1>
+        </div>
+        <nav class="col-12 navbar">
+          <ul class="nav-tabs">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categoria TODOS</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" src="#destaque">Todos</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" src="#destaque">Aventura</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item"src="#destaque">Romance</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item"src="#destaque">Comédia</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="row film_cards">
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 card-transparent">
+            <img class="card-img" src="https://xl.movieposterdb.com/07_12/1993/107290/xl_107290_3f21ea7c.jpg" alt="Card image cap">
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 card-transparent">
+            <img class="card-img-top" src="https://xl.movieposterdb.com/10_11/1980/80684/xl_80684_b28cbd48.jpg">
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 card-transparent">
+            <img class="card-img-top" src="https://xl.movieposterdb.com/15_11/2015/2488496/xl_2488496_0dedc25d.jpg" alt="Card image cap">
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 card-transparent">
+            <img class="card-img-top" src="https://xl.movieposterdb.com/07_08/1989/0096874/xl_0096874_9240dcd1.jpg" alt="Card image cap">
+          </div>
+        </div>
+      </section>
+
+      <section class="row reviews" id="reviews">
+        <div class="col-12 review_title">
+          <h1 class="title">
+            Últimas Avaliações
+          </h1>
+        </div>
+        <div class="col-12">
+          
+          <div class="row review_cards">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 card">
+              <img src="./images/image01.jpg" class="card-img-top" >
+              <div class="card-body">
+                <h4 class="card-text">Robert Johnson</h4>
+                <p class="card-text">"Too much water." <br> ...</p>
+                <div class="film-info">
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star_outline </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 card">
+              <img src="./images/image02.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-text">Elisa Weber</h4>
+                <p class="card-text">"Um dos melhores filmes de todos os tempos."</p>
+                <div class="film-info">
+                  <span class="material-icons"> star_outline </span>
+                  <span class="material-icons"> star_outline </span>
+                  <span class="material-icons"> star_outline </span>
+                  <span class="material-icons"> star_outline </span>
+                  <span class="material-icons"> star_outline </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 card">
+              <img src="./images/image03.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-text">Beatrice Scott</h4>
+                <p class="card-text">"Bom filme para curtir o fim de semana."</p>
+                <div class="film-info">
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star_outline </span>
+                  <span class="material-icons"> star_outline </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row interviews" id="interviews">
+        <div class="col-12 interviews_title">
+          <h1 class="title">
+            Entrevistas & Making-Of
+          </h1>
+        </div>
+        <div class="col-12">
+          <div class="row interview_cards">
+            <div class="col-sm-12 col-md-4 card">
+              <div class="card-body">
+                <div class="videoWrapper">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/jnzZ8WllJyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="card-text">
+                  <h4>Um Principe em Nova York 2</h4>
+                  <div class="card-info">
+                    <p>
+                      <b>Direção:</b> <a href="https://pt.wikipedia.org/wiki/Craig_Brewer" target="_blank">Craig Brewer</a>
+                    </p>
+                    <p>
+                      <b>Roteiro:</b>
+                      <a href="https://en.wikipedia.org/wiki/Kenya_Barris" target="_blank">Kenya Barris</a>
+                    </p>
+                  </div>
+                  <p><b>Estreia:</b> 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 card">
+              <div class="card-body">
+                <div class="videoWrapper">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/V91vo4fy6GU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="card-text">
+                  <h4>Monster Hunter</h4>
+                  <div class="card-info">
+                    <p>
+                      <b>Direção:</b> <a href="https://pt.wikipedia.org/wiki/Paul_W._S._Anderson" target="_blank">Paul W. S. Anderson</a>
+                    </p>
+                    <p>
+                      <b>Roteiro:</b>
+                      <a href="https://pt.wikipedia.org/wiki/Paul_W._S._Anderson" target="_blank">Paul W. S. Anderson</a>
+                    </p>
+                  </div>
+                  <p><b>Estreia:</b> 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 card">
+              <div class="card-body">
+                <div class="videoWrapper">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Cp0GYlRUNHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="card-text">
+                  <h4>MIB: Homens de Preto Internacional</h4>
+                  <div class="card-info">
+                    <p>
+                      <b>Direção:</b> <a href="https://pt.wikipedia.org/wiki/F._Gary_Gray" target="_blank">F. Gary Gray</a>
+                    </p>
+                    <p>
+                      <b>Roteiro:</b>
+                      <a href="https://pt.wikipedia.org/wiki/Art_Marcum_e_Matt_Holloway" target="_blank">Art Marcum e Matt Holloway</a>
+                    </p>
+                  </div>
+                  <p><b>Estreia:</b> 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row end">
+        <div class="col-sm-12 col-lg-7 news" id="news">
+          <div class="row posts">
+            <div class="col-12 news_title">
+              <h1 class="title">
+                Novidades
+              </h1>
+            </div>
+            <div class="col-12 card">
+              <a href="https://jovemnerd.com.br/nerdbunker/luca-animacao-da-pixar-ganha-novo-trailer-cheio-de-aventuras-na-cidade/" target="_blank" rel="noopener noreferrer">
+                <h5 class="card-header">Luca, animação da Pixar, ganha novo trailer cheio de aventuras na cidade</h5>
+                <div class="row card-body">
+                  <div class="col-6">
+                    <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2021/04/luca-trailer-760x428.jpg">
+                  </div>
+                  <div class="col-sm-12 col-lg-6">
+                    <p class="card-text">Luca e Alberto precisam manter suas identidades em segredo.</p>
+                    <div class="tags">
+                      <span class="badge bg-danger">Pixar</span>
+                      <span class="badge bg-danger">Animação</span>
+                      <span class="badge bg-danger">Trailer</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+            <div class="col-12 card">
+              <a href="https://jovemnerd.com.br/nerdbunker/oscar-2021-teve-audiencia-mais-baixa-de-todos-os-tempos-nos-eua/" target="_blank" rel="noopener noreferrer">
+                <h5 class="card-header">Oscar 2021 teve audiência mais baixa de todos os tempos nos EUA</h5>
+                <div class="row card-body">
+                  <div class="col-6">
+                    <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2021/04/oscar-2021-pior-audiencia-760x428.jpg">
+                  </div>
+                  <div class="col-sm-12 col-lg-6">
+                    <p class="card-text">Não chegou nem a 10 milhões de expectadores.</p>
+                    <div class="tags">
+                      <span class="badge bg-danger">Oscar</span>
+                      <span class="badge bg-danger">Hollywood</span>
+                      <span class="badge bg-danger">Cinema</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 card">
+              <a href="https://jovemnerd.com.br/nerdbunker/netflix-pretende-investir-us-17-bilhoes-em-conteudo-em-2021/" target="_blank" rel="noopener noreferrer">
+                <h5 class="card-header">Netflix pretende investir US$ 17 bilhões em conteúdo em 2021</h5>
+                <div class="row card-body">
+                  <div class="col-6">
+                    <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2021/04/netflix-17-bilhoes-760x428.jpg">
+                  </div>
+                  <div class="col-sm-12 col-lg-6">
+                    <p class="card-text">"Estamos retornando e produzindo com segurança nos principais mercados, com exceção do Brasil e da Índia."</p>
+                    <div class="tags">
+                      <span class="badge bg-danger">Netflix</span>
+                      <span class="badge bg-danger">Streaming</span>
+                      <span class="badge bg-danger">Cinema</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-5 about">
+          <h1 class="title">
+            Sobre
+          </h1>
+          <p>Somos apenas um portal sobre filmes fictício, projetado como parte de um trabalho para aplicar os conhecimentos aprendidos até agora da matéria de Desenvolvimento de Interfaces Web, dos cursos de Tecnologia da Informação da PUC Minas. Sim, este texto é apenas para preencher espaço, mas por favor, considere levá-lo a sério ao avaliar meu trabalho.</p>
+          <h1 class="title">
+            Editorial
+          </h1>
+          <ul id="editorial">
+            <li>
+              <span class="material-icons">
+                person
+              </span>
+              <p><b>Redação:</b> Luís Antônio</p>
+            </li>
+            <li>
+              <span class="material-icons">
+                person
+              </span>
+              <p><b>Pesquisa:</b> Luís Antônio</p>
+            </li>
+            <li>
+              <span class="material-icons">
+                person
+              </span>
+              <p><b>Gerente Geral:</b> Luís Antônio</p>
+            </li>
+          </ul>
+          <h3>redes sociais:</h3>
+          <div class="social" style="display: flex;">
+            <a class="navbar-brand" href="#">
+              <span class="material-icons" style="color: white; text-decoration:none; font-size: 48px;">
+                facebook
+              </span>
+            </a>
+            <a class="navbar-brand"href="#">
+              <img src="./images/104501-64.png" width="48px" alt="" />
+            </a>
+            <a class="navbar-brand"href="#">
+              <img src="./images/insta.png" width="48px" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <nav class="navbar">
+        <span class="navbar-text">
+          Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web -
+          <strong>ICEI PUC MINAS</strong>
+        </span>
+        <a class="navbar-brand">
+          <img src="./images/favicon.ico" width="48px" alt="" />
+        </a>
+      </nav>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
