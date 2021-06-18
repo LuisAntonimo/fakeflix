@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FakeFlix</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -19,43 +14,27 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="container header">
-      <nav class="navbar">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark ">
         <a class="navbar-brand" href="">
           <img src="./images/logo.svg" width="120px" alt="" />
         </a>
-        <div class="row">
-          <div class="col-12 nav-links">
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link" href="#releases">lançamentos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#destaque">em destaque</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#reviews">avaliações</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#interviews">entrevista & making-of</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#news">novidades</a>
-              </li>
-            </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#releases">Lançamentos</a>
+            <a class="nav-item nav-link" href="#destaque">Em Destaque</a>
+            <a class="nav-item nav-link" href="#reviews">Avaliações</a>
+            <a class="nav-item nav-link" href="#interviews">Entrevistas & Making-of</a>
+            <a class="nav-item nav-link" href="#news">Novidades</a>
           </div>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-outline-danger" type="submit">Go</button>
+          </form>
         </div>
-        <form class="form-inline">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
-            <span class="material-icons">search</span>
-          </button>
-        </form>
       </nav>
     </header>
 
@@ -567,7 +546,7 @@
       </section>
     </main>
 
-    <footer class="footer container">
+    <footer class="footer">
       <nav class="navbar">
         <span class="navbar-text">
           Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web -
