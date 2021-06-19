@@ -21,16 +21,15 @@ body {background-color: #262626;}
 
 .logo img{ max-width: 120px;}
 
-ul.nav a {
+.nav-link {
   color: white;
 }
 
-ul.nav a:hover { color: #ff7f11 !important; }
-
-.btn .material-icons {
-  padding: 10px;
-  line-height: 0.5;
+.navbar-nav {
+  margin-right: 235px;
 }
+
+.nav-link:hover { color: #ff7f11 !important; }
 
 /* MAIN */
 
@@ -41,6 +40,32 @@ main {
 .title {
   margin: 40px 0;
 }
+
+.offcanvas {
+  background-color: #1d1d1d;
+  color: white !important;
+}
+
+.offcanvas a {
+  text-decoration: none;
+  color: white;
+}
+
+.offcanvas-body .card {
+  background-color: #262626;
+  margin: 10px 0;
+}
+
+.offcanvas-body .card p {
+  font-size: 2vmin;
+  text-align: justify;
+}
+
+.offcanvas-body .card img {
+  width: 100%;
+}
+
+/* LANÇAMENTOS */
 
 .videoWrapper{
   position: relative;
@@ -67,8 +92,6 @@ main {
 .card-transparent {
   cursor: pointer;
 }
-
-/* LANÇAMENTOS */
 
 .releases-title {
   text-align: center;
@@ -108,47 +131,6 @@ main {
 
 /* DESTAQUES */
 
-.destaque .navbar {
-  padding-left: 0 !important;
-}
-
-.destaque .title {
-  margin: 40px 0px;
-  padding-left: 0;
-}
-
-.destaque .nav-tabs {
-  margin: 10px 0 0 0;
-  border-color: transparent !important;
-}
-
-.destaque .nav-tabs .nav-link{
-  border-color: transparent;
-}
-
-.destaque .nav-tabs a {
-  color: #FF7F11 !important;
-}
-
-.destaque .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  background-color:transparent;
-  border-color: transparent;
-}
-
-.dropdown-menu.show {
-  background-color:#1d1d1db6 ;
-}
-
-.dropdown-menu.show :hover {
-  background-color: #1d1d1d80;
-  cursor: pointer;
-}
-
-.dropdown-divider {
-  border-color: #1d1d1d!important;
-}
-
-
 .film_cards .card-transparent{
   margin: 10px 0 !important;
 }
@@ -156,6 +138,11 @@ main {
 .film_cards img {
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
 }
+
+.card-transparent img {
+  height: 100%;
+}
+
 
 /* REVIEWS */
 
@@ -264,12 +251,6 @@ main {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width:768px) {
-  .form-inline {
-    display: none;
-  }
-}
-
 @media only screen and (min-width:668px) and (max-width:768px) {
 
   .carousel-inner {
@@ -312,4 +293,3 @@ main {
     display: none;
   }
 }
-  

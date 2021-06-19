@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FakeFlix</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -19,73 +14,50 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="container header">
-      <nav class="navbar">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark ">
         <a class="navbar-brand" href="">
           <img src="./images/logo.svg" width="120px" alt="" />
         </a>
-        <div class="row">
-          <div class="col-12 nav-links">
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link" href="#releases">lançamentos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#destaque">em destaque</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#reviews">avaliações</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#interviews">entrevista & making-of</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#news">novidades</a>
-              </li>
-            </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a class="nav-item nav-link" href="#releases">Lançamentos</a>
+          <a class="nav-item nav-link" href="#destaque">Em Destaque</a>
+          <a class="nav-item nav-link" href="#reviews">Avaliações</a>
+          <a class="nav-item nav-link" href="#interviews">Entrevistas & Making-of</a>
+          <a class="nav-item nav-link" href="#news">Novidades</a>
+          <div class="d-flex">
+            <input id="searchBox" class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button id="searchBttn"class="btn btn-outline-danger"type="submit" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Go</button>
           </div>
         </div>
-        <form class="form-inline">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
-            <span class="material-icons">search</span>
-          </button>
-        </form>
       </nav>
     </header>
 
     <main class="container main">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Resultado</h5>
+          <button id="closeBttn" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+        </div>
+      </div>
+
       <section class="row releases" id="releases">
         <div class="col-12">
           <h1 class="releases-title">Lançamentos</h1>
         </div>
         <section class="row banner">
           <div class="col-12 carousel">
-            <div
-              id="carouselExampleIndicators"
-              class="carousel slide carousel"
-              data-ride="carousel"
-            >
-              <ol class="carousel-indicators">
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="1"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="2"
-                ></li>
-              </ol>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="row">
@@ -94,7 +66,7 @@
                         <iframe
                         width="560"
                         height="315"
-                        src="https://www.youtube.com/embed/Yh-XpUlDjJk"
+                        src="https://www.youtube.com/embed/yl9mbyXDO8g"
                         title="YouTube video player"
                         frameborder="0"
                         allow=" clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -104,170 +76,37 @@
                     </div>
   
                     <div class="col-sm-12 col-lg-6 infos">
-                      <h2>Raya e o Último Dragão</h2>
+                      <h2>Spirit: O Indomável</h2>
                       <p class="sinopse">
-                        <b>Sinopse:</b> Há muito tempo, no mundo de fantasia de
-                        Kumandra, humanos e dragões viviam juntos em harmonia. Mas
-                        quando uma força maligna ameaçou a terra, os dragões se
-                        sacrificaram para salvar a humanidade. Agora, 500 anos
-                        depois, o mesmo mal voltou e cabe a uma guerreira
-                        solitária, Raya, rastrear o lendário último dragão para
-                        restaurar a terra despedaçada e seu povo dividido.
+                        <b>Sinopse: Lucky Prescott nunca conheceu a sua mãe, Milagro Navarro, uma destemida montadora de cavalos de Miradero, uma pequena cidade perto da fronteira. Tal como a sua mãe, Lucky nunca foi propriamente fã de regras e restrições, o que sempre causou à sua Tia Cora algumas dores de cabeça. Lucky cresceu numa cidade da Costa Leste sob o olhar atento da tia, mas quando abusou da sorte com as suas excessivas aventuras arriscadas, Cora apertou o cerco e as duas voltaram para casa do pai de Lucky, Jim, em Miradero. Ao chegar Lucky ficou muito pouco impressionada com aquela pequena cidade adormecida. Mas tudo muda quando conhece Spirit, um Mustang selvagem que partilha o mesmo espírito independente que ela.</b>
                       </p>
                       <div class="film-info">
                         <p>
-                          <b>Direção:</b> <a href="https://pt.wikipedia.org/wiki/Don_Hall" target="_blank">Don Hall</a>,
-                          <a href="https://pt.wikipedia.org/wiki/Carlos_L%C3%B3pez_Estrada" target="_blank">Carlos Lopez Estrada</a>
+                          <b>Direção:</b> <a href="" target="_blank">Elaine Bogan</a>
+                          
                         </p>
+                        
                         <p>
                           <b>Roteiro:</b>
-                          <a href="https://en.wikipedia.org/wiki/Adele_Lim" target="_blank">Adele Lim</a>,
-                          <a href="https://pt.wikipedia.org/wiki/Qui_Nguyen" target="_blank"> Qui Nguyen</a>
+                          <a href="" target="_blank">Aury Wallington</a>,
+                          <a href="" target="_blank">Kristin Hahn</a>
                         </p>
                         <p><b>Estreia:</b> 2021</p>
                       </div>
                       <div class="actors">
                         <p><b>Elenco:</b></p>
                         <div class="film-info">
-                          <p><a href="https://pt.wikipedia.org/wiki/Awkwafina" target="_blank">Awkwafina</a></p>
+                          <p><a href="" target="_blank">Isabela Merced</a></p>
                           <p>
-                            <a href="https://pt.wikipedia.org/wiki/Kelly_Marie_Tran" target="_blank">
-                              Kelly Marie Tran
+                            <a href="" target="_blank">
+                              Eiza González
                             </a>
                           </p>
                           <p>
-                            <a href="https://pt.wikipedia.org/wiki/Gemma_Chan" target="_blank">Gemma Chan</a>
+                            <a href="" target="_blank">Mckenna Grace</a>
                           </p>
                           <p>
-                            <a href="https://pt.wikipedia.org/wiki/Alan_Tudyk" target="_blank">Alan Tudyk</a>
-                          </p>
-                        </div>
-                      </div>
-  
-                      <div class="review">
-                        <p><b>Avaliação:</b></p>
-                        <div class="film-info">
-                          <span class="material-icons"> star </span>
-                          <span class="material-icons"> star </span>
-                          <span class="material-icons"> star </span>
-                          <span class="material-icons"> star </span>
-                          <span class="material-icons"> star_outline </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-sm-12 col-lg-6 video">
-                      <div class="videoWrapper">
-                        <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube.com/embed/odM92ap8_c0"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow=" clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                      ></iframe>
-                      </div>
-                    </div>
-  
-                    <div class="col-sm-12 col-lg-6 infos">
-                      <h2>Godzilla vs Kong</h2>
-                      <p class="sinopse">
-                        <b>Sinopse:</b> As lendas se enfrentam em "Godzilla vs. Kong", quando esses adversários míticos se encontram em uma espetacular batalha, na qual o destino do mundo entrará em jogo. Kong e seus protetores embarcam em uma jornada perigosa para encontrar seu verdadeiro lar. Com eles está Jia, uma jovem órfã que tem uma ligação única e forte com Kong. Mas eles não sabiam que estavam no caminho de um Godzilla enfurecido, que está deixando um rastro de destruição pelo planeta.
-                      </p>
-                      <div class="film-info">
-                        <p>
-                          <b>Direção:</b> 
-                          <a href="https://en.wikipedia.org/wiki/Adam_Wingard" target="_blank">Adam Wingard</a>
-                        </p>
-                        <p>
-                          <b>Roteiro:</b> 
-                          <a href="https://en.wikipedia.org/wiki/Max_Borenstein" target="_blank">Max Borenstein</a>,
-                          <a href="https://en.wikipedia.org/wiki/Eric_Pearson" target="_blank">Eric Pearson</a>
-                        </p>
-                        <p><b>Estreia:</b> 2021</p>
-                      </div>
-                      <div class="actors">
-                        <p><b>Elenco:</b></p>
-                        <div class="film-info">
-                          <p><a href="https://pt.wikipedia.org/wiki/Millie_Bobby_Brown" target="_blank">Millie Bobby Brown</a></p>
-                          <p>
-                            <a href="https://pt.wikipedia.org/wiki/Alexander_Skarsg%C3%A5rd" target="_blank">Alexander Skarsgård</a>
-                          </p>
-                          <p>
-                            <a href="https://pt.wikipedia.org/wiki/Rebecca_Hall" target="_blank">Rebecca Hall</a>
-                          </p>
-                          <p>
-                            <a href="https://pt.wikipedia.org/wiki/Eiza_Gonz%C3%A1lez" target="_blank">Eiza González</a>
-                          </p>
-                        </div>
-                      </div>
-  
-                      <div class="review">
-                        <p><b>Avaliação:</b></p>
-                        <div class="film-info">
-                          <span class="material-icons"> star </span>
-                          <span class="material-icons"> star </span>
-                          <span class="material-icons"> star </span>
-                          <span class="material-icons"> star </span>
-                          <span class="material-icons"> star_outline </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-sm-12 col-lg-6 video">
-                      <div class="videoWrapper">
-                        <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube.com/embed/6pKvuKQ2pIg"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow=" clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                      ></iframe>
-                      </div>
-                    </div>
-  
-                    <div class="col-sm-12 col-lg-6 infos">
-                      <h2>O Auto da Boa Mentira</h2>
-                      <p class="sinopse">
-                        <b>Sinopse:</b> Dizem que mentira tem perna curta. Se isso é verdade, a bichinha corre rápido, viu! Em quatro histórias inspiradas em contos bem humorados de Ariano Suassuna, cada uma criada a partir de frases do poeta paraibano, conhecemos Helder, Fabiano, Pierce e Lorena, vivendo diferentes situações onde, ironicamente, a mentira é sempre a protagonista.
-                      </p>
-                      <div class="film-info">
-                        <p>
-                          <b>Direção:</b> <a href="https://pt.wikipedia.org/wiki/Jos%C3%A9_Eduardo_Belmonte" target="_blank">José Eduardo Belmonte</a>,
-                        </p>
-                        <p>
-                          <b>Roteiro:</b> <a href="">Tatiana Maciel</a>,
-                          <a href="">Célio Porto</a>
-                        </p>
-                        <p><b>Estreia:</b> 2021</p>
-                      </div>
-                      <div class="actors">
-                        <p><b>Elenco:</b></p>
-                        <div class="film-info">
-                          <p>
-                            <a href="https://pt.wikipedia.org/wiki/Leandro_Hassum" target="_blank">Leandro Hassum</a>
-                          </p>
-                          <p>
-                            <a href="https://pt.wikipedia.org/wiki/Nanda_Costa" target="_blank">Nanda Costa</a>
-                          </p>
-                          <p>
-                            <a href="https://pt.wikipedia.org/wiki/Rocco_Pitanga" target="_blank">
-                              Rocco Pitanga
-                            </a>
-                          </p>
-                          <p>
-                            <a href="https://pt.wikipedia.org/wiki/Jesu%C3%ADta_Barbosa" target="_blank">
-                              Jesuíta Barbosa
-                            </a>
+                            <a href="" target="_blank">Jake Gyllenhaal</a>
                           </p>
                         </div>
                       </div>
@@ -283,7 +122,138 @@
                         </div>
                       </div>
                     </div>
+                  </div>
                 </div>
+
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-6  video">
+                      <div class="videoWrapper">
+                        <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/8Tk8sqXlogM"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow=" clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                      </div>
+                    </div>
+  
+                    <div class="col-sm-12 col-lg-6 infos">
+                      <h2>Mortal Kombat</h2>
+                      <p class="sinopse">
+                        <b>Sinopse:</b> Em Mortal Kombat, o lutador de MMA Cole Young, acostumado a apanhar por dinheiro, não faz ideia da herança que carrega - ou por que o Imperador da Exoterra, Shang Tsung, enviou seu melhor guerreiro, Sub-Zero, um criomancer de outro mundo, para exterminar Cole. Temendo pela segurança de sua família, Cole sai em busca de Sonya Blade por recomendação de Jax, um major das Forças Especiais que tem a mesma estranha marca de nascença na forma de dragão que Cole. Logo, ele se encontra no templo do Lorde Raiden, um Deus Ancião e protetor do reino da Terra, que acolhe aqueles que ostentam a marca. Lá, Cole treina com os experientes guerreiros Liu Kang, Kung Lao e o mercenário vigarista Kano, à medida que se prepara para enfrentar, ao lado dos maiores campeões da Terra, inimigos oriundos da Exoterra em uma arriscada batalha pelo universo. Contudo, será que ele treinará o bastante para desbloquear sua arcana - o imenso poder que existe dentro de sua alma – a tempo não só de salvar sua família, mas também de vencer a Exoterra de uma vez por todas?
+                      </p>
+                      <div class="film-info">
+                        <p>
+                          <b>Direção:</b> <a href="" target="_blank">Simon McQuoid</a>
+                          
+                        </p>
+                        <p>
+                          <b>Roteiro:</b>
+                          <a href="" target="_blank">Greg Russo</a>,
+                          <a href="" target="_blank"> Sean Catherine Derek</a>
+                        </p>
+                        <p><b>Estreia:</b> 2021</p>
+                      </div>
+                      <div class="actors">
+                        <p><b>Elenco:</b></p>
+                        <div class="film-info">
+                          <p><a href="" target="_blank">Jessica McNamee</a></p>
+                          <p>
+                            <a href="" target="_blank">
+                              Hiroyuki Sanada
+                            </a>
+                          </p>
+                          <p>
+                            <a href="" target="_blank">Lewis Tan</a>
+                          </p>
+                          <p>
+                            <a href="" target="_blank">Joe Taslim</a>
+                          </p>
+                        </div>
+                      </div>
+  
+                      <div class="review">
+                        <p><b>Avaliação:</b></p>
+                        <div class="film-info">
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star_half </span>
+                          <span class="material-icons"> star_outline </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-6  video">
+                      <div class="videoWrapper">
+                        <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/gmRKv7n2If8"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow=" clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                      </div>
+                    </div>
+  
+                    <div class="col-sm-12 col-lg-6 infos">
+                      <h2>Cruella</h2>
+                      <p class="sinopse">
+                        <b>Sinopse:</b> Inteligente, criativa e determinada, Estella quer fazer um nome para si através de seus designs e acaba chamando a atenção da Baronesa Von Hellman. Entretanto, o relacionamento delas desencadeia um curso de eventos e revelações que fazem com que Estella abrace seu lado rebelde e se torne a Cruella, uma pessoa má, elegante e voltada para a vingança.
+                      </p>
+                      <div class="film-info">
+                        <p>
+                          <b>Direção:</b> <a href="" target="_blank">Craig Gillespie</a>
+                        </p>
+                        <p>
+                          <b>Roteiro:</b>
+                          <a href="" target="_blank">Aline Brosh McKenna</a>,
+                          <a href="" target="_blank"> Steve Zissis</a>
+                        </p>
+                        <p><b>Estreia:</b> 2021</p>
+                      </div>
+                      <div class="actors">
+                        <p><b>Elenco:</b></p>
+                        <div class="film-info">
+                          <p><a href="" target="_blank">Emma Stone</a></p>
+                          <p>
+                            <a href="" target="_blank">
+                              Emma Thompson
+                            </a>
+                          </p>
+                          <p>
+                            <a href="" target="_blank">Joel Fry</a>
+                          </p>
+                          <p>
+                            <a href="" target="_blank">Paul Walter Hauser</a>
+                          </p>
+                        </div>
+                      </div>
+  
+                      <div class="review">
+                        <p><b>Avaliação:</b></p>
+                        <div class="film-info">
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star </span>
+                          <span class="material-icons"> star_half </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               </div>
             </div>
           </div>
@@ -295,35 +265,9 @@
             Em Destaque
           </h1>
         </div>
-        <nav class="col-12 navbar">
-          <ul class="nav-tabs">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categoria TODOS</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" src="#destaque">Todos</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" src="#destaque">Aventura</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item"src="#destaque">Romance</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item"src="#destaque">Comédia</a>
-              </div>
-            </li>
-          </ul>
-        </nav>
+        
         <div class="row film_cards">
-          <div class="col-12 col-sm-12 col-md-3 col-lg-3 card-transparent">
-            <img class="card-img" src="https://xl.movieposterdb.com/07_12/1993/107290/xl_107290_3f21ea7c.jpg" alt="Card image cap">
-          </div>
-          <div class="col-12 col-sm-12 col-md-3 col-lg-3 card-transparent">
-            <img class="card-img-top" src="https://xl.movieposterdb.com/10_11/1980/80684/xl_80684_b28cbd48.jpg">
-          </div>
-          <div class="col-12 col-sm-12 col-md-3 col-lg-3 card-transparent">
-            <img class="card-img-top" src="https://xl.movieposterdb.com/15_11/2015/2488496/xl_2488496_0dedc25d.jpg" alt="Card image cap">
-          </div>
-          <div class="col-12 col-sm-12 col-md-3 col-lg-3 card-transparent">
-            <img class="card-img-top" src="https://xl.movieposterdb.com/07_08/1989/0096874/xl_0096874_9240dcd1.jpg" alt="Card image cap">
-          </div>
+          
         </div>
       </section>
 
@@ -567,7 +511,7 @@
       </section>
     </main>
 
-    <footer class="footer container">
+    <footer class="footer">
       <nav class="navbar">
         <span class="navbar-text">
           Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web -
@@ -578,20 +522,8 @@
         </a>
       </nav>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/cards.js"></script>
   </body>
 </html>
